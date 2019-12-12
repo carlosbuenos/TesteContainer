@@ -1,0 +1,13 @@
+{
+  hostBase:'pagozap.mooo.com',
+  hostUser:'pagozap',
+  hostRabbit:'pagozap.twilightparadox.com',
+  hostPassword:'cGFnb3phcDIwMTg=',
+  hostMongo:'pagozap.chickenkiller.com',
+  hostMySQL:'pagozap.cidvwn6f1cho.us-east-1.rds.amazonaws.com',
+  routeLog:'http://pagozap.mooo.com:9006/api/LogErros/',
+  hostPessoa:'http://pagozap.mooo.com:9000/api/Pessoas',
+  FilePathCertificateSSl:'/usr/lib/ssl/https.pfx',
+  emailRemetenteLogCritical:'declinkmail@gmail.com',
+  passwordRemetenteLogCritical:'declink2018'
+}

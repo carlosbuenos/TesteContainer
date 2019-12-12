@@ -1,0 +1,8 @@
+version: '3.4'
+
+services:
+  api.pessoas:
+    image: apipessoas
+    build:
+      context: .
+      dockerfile: Api.Pessoas/Dockerfile
