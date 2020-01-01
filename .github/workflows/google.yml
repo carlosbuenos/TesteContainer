@@ -17,11 +17,11 @@ on:
 
 # Environment variables available to all jobs and steps in this workflow
 env:
-  GKE_PROJECT: ${{ secrets.GKE_PROJECT }}
-  GKE_EMAIL: ${{ secrets.GKE_EMAIL }}
+  GKE_PROJECT: ${{ estudogcp-261420 }}
+  GKE_EMAIL: ${{ estudogcp-261420@appspot.gserviceaccount.com }}
   GITHUB_SHA: ${{ github.sha }}
   GKE_ZONE: us-central1-a	
-  GKE_CLUSTER: example-gke-cluster
+  GKE_CLUSTER: apiestudo-82
   IMAGE: gke-test
 
 jobs:
@@ -37,8 +37,8 @@ jobs:
     - uses: GoogleCloudPlatform/github-actions/setup-gcloud@master
       with:
         version: '270.0.0'
-        service_account_email: ${{ secrets.GKE_EMAIL }}
-        service_account_key: ${{ secrets.GKE_KEY }}
+        service_account_email: ${{ estudogcp-261420@appspot.gserviceaccount.com }}
+        service_account_key: ${{nMIIEvAIBADANBgkqhkiG9w0BAQEFAASCBKYwggSiAgEAAoIBAQCiiKReZ29XT4iS\nDkuvCPqw90SXIElRZhT/fIzSS8JlLskt/uGvA3rKCABA5NXnbsN7QsTr6rNLi2kP\ncSE0up4m3e2lzWKd9LbG9B6CYvbybzhXA2FeDCUl1e9NEf3iCfZ8RMj2Ifs4XInP\nlDUWMKXErnUCXQdO8RwRAZUUgP3gtMsTYiQc93r0c4rPB2+0X8S6Jm/tFCs821Wf\n447mgXxKulk8Ct5boR4okqxdhR9k963cPMZTFTJWiBX92OWkMIQ8Bx4ZSDx+3WzC\neYrZiRLn/AZwYmO558HhcZIkM4Q3wJeKnDDZHRhsPTSU0wqWXGgbxk9t7UcHz4MA\nK4iAEEIVAgMBAAECgf87IqCrJhulqLgH2b34zLlEzmlK3Cs+lwoxWEQtY/VWkfhX\nVhvrSDRAKPI3zsFyl2yIR8LLygaWmmufMq6ZEwPlaWvpMIfVguq0U9R8wKmq+RWG\nkyH+g5FJoIzeWRsq2ZmwL1alpJLnXHrHngBE7gCGs4UDoEMIddXAWkC+6+aXkXZP\nSoLZhNwcOPU1hF2zBIdW1JnTTwP4DDhBVRT0JEIli/uPYVrIyJdb7hGs+gQYMRYR\ncehhseHY5aenGEInUPe6xUOmPioVnbDsXFsU0m36l7T/sodaiWcGOoSvJj/KM928\n/NGJ05Hj5gc8PqxDc8UrG6eD4CqE/llST2pSvwECgYEA4RCBE+O3MO44Ac/bqPVf\nME7G57BvT14D7ETpy8w2efnMlf9k3n7x8QrrCII3oMKex1+0EzfWAcbQwYlabxGu\nSGbElwgYvDKXoiUnzcoMHYaT67gUqiZxGn1JBcfQCDOjG+f4+Ilqfawm6OnWiCyy\neDBSDZC0qAsvM7pWkMm9naUCgYEAuN/T0Dq9KUbKqS9WkFwuSNZcjkl1AGh7zQnA\nsEFV0A0lKWvyA1YFs8qNuiSZuoMmieUWHZhpp5x+lnpJTwTB5oErYQFDpRd6PJFl\nyARl9YkAhqPz7nEfxBUTCEgZdYIWk1sv0yK8H3SXTgxlNA8DXbkjd+fvrmQ8jHGQ\n+q7Px7ECgYBoWpGu2i/PdTTsyibMUXEgYfZh6PHDeBETlORehUJhDgzpI7DuZSfj\nHq/Zkx8d3/9k7B//pS0KR9f1VK1kwGrx0QyoBq4JXN/n45hwF5XEfujJK+IQ/qAE\nq0CXeI0hsGeZgdZzzqtct9yWtA2vuCHMDoONHKJXJFBviJ+opJHRrQKBgQCL1TB+\n1Y7yQ4tSQG33LuILUagcL0+CCYVqZrAKIMDpZqfvFqitAUm63cApRTnJqx1hO5do\ntzli/6l34/LDA9QtpxHKg4xIuONKIKedjEYaW4+8RxJgDcx7IX2NzAsFqGmu90/L\nIQCtwiAXdqStpZVkNH6xWQsfGs35ZITGN6cNYQKBgQC1jCCPNRW9vvQkEIdYCquA\nGemHh+lpD0cTy+gX0c+9Zb2rg12fiHBCDHwv0Tu3f9yeNRf8wRZV03FB+NmoG/Fd\nGtrtCs2GNAzlz3ZiiBTf3pNgL7XWNnZyMJtCDJOZxb2F6iylN7kr4dr4Xom5TgHR\nxDHWhDJfHEniCDLNqeidkg== }}
 
     # Configure docker to use the gcloud command-line tool as a credential helper
     - run: |
