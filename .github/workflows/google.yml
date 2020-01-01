@@ -22,7 +22,7 @@ env:
   GITHUB_SHA: ${{ github.sha }}
   GKE_ZONE: us-central1-a	
   GKE_CLUSTER: apiestudo-82
-  IMAGE: gke-test
+  IMAGE: apiestudo
 
 jobs:
   setup-build-publish-deploy:
