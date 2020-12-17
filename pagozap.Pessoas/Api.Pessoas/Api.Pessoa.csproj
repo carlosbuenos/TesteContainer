@@ -22,7 +22,7 @@
   <ItemGroup>
     <PackageReference Include="DeclinkLogErros" Version="1.0.9" />
     <PackageReference Include="GeekLearning.SwashbuckleExtensions" Version="0.4.0" />
-    <PackageReference Include="Microsoft.AspNetCore.All" Version="2.0.6" />
+    <PackageReference Include="Microsoft.AspNetCore.All" Version="2.0.9" />
     <PackageReference Include="Microsoft.VisualStudio.Web.CodeGeneration.Design" Version="2.0.3" />
     <PackageReference Include="RestSharp" Version="106.3.1" />
     <PackageReference Include="SimpleInjector.Integration.AspNetCore.Mvc" Version="4.3.1" />
